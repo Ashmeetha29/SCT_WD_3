@@ -1,0 +1,76 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0a0f2c;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-container {
+  text-align: center;
+  padding: 20px;
+  background: #12163b;
+  border-radius: 20px;
+  box-shadow: 0 0 25px #3a86ff;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px #ff006e, 0 0 25px #3a86ff;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: #1c224f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ffbe0b;
+  transition: all 0.3s ease;
+}
+
+.cell:hover {
+  background: #2d356b;
+  box-shadow: 0 0 20px #ff006e;
+}
+
+#status {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #ffbe0b;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: #3a86ff;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 15px #3a86ff;
+}
+
+button:hover {
+  background: #ff006e;
+  box-shadow: 0 0 20px #ff006e;
+}
